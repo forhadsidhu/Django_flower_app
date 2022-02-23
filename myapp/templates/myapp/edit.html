@@ -1,0 +1,30 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<form action="" method="post">
+<!--    This token adds protection against Cross Site Request Forgeries where malicious-->
+<!--parties can cause visitor’s browser to make a request to your website-->
+        {% csrf_token %}
+        <div class="row justify-content-center">
+<!--            Easiest way to generate HTML markup for the form fields is to use the {{ form-->
+<!--}} template variable-->
+        <div class="col-6">
+              {{ form.non_field_errors  }}
+              <div class="form-group">
+                {{ form.description.errors }}
+                {{ form.description.label_tag }}
+                {{ form.description }}
+                </div>
+                <div class="form-group">
+                {{ form.title.errors }}
+                {{ form.title.label_tag }}
+                {{ form.title }}
+                </div>
+
+<!--            will render non-field specific general errors.-->
+
+        <hr class="mb-3">
+           <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+        </div>
+        </div>
+</form>
+{% endblock %}
