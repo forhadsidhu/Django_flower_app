@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'imagekit',
     'base',
     'myapp',
-    'django.contrib.sites',
+    # 'django.contrib.sites',
 
 
 
