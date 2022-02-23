@@ -41,8 +41,9 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'imagekit',
     'base',
-    'django.contrib.sites',
     'myapp',
+    'django.contrib.sites',
+
 
 
 ]
