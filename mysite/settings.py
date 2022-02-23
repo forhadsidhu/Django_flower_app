@@ -41,10 +41,12 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'imagekit',
     'base',
+    'django.contrib.sites',
     'myapp',
 
 
 ]
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
