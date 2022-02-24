@@ -15,7 +15,7 @@ allowing access to resources.
 def index(request):
     q = request.GET.get('q', None)
     items = ''
-    if q is None or q is "":
+    if q is None or q == "":
         flowers = Flower.objects.all()
     elif q is not None:
         flowers = Flower.objects.filter(title__contains=q)
